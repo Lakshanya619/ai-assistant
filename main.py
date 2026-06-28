@@ -3,7 +3,7 @@ import streamlit as st
 
 # Choose one provider
 
-from groq_client import generate_response
+from hf import generate_response
 # from hf import generate_response
 
 
