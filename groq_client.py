@@ -4,7 +4,7 @@ from openai import OpenAI
 GROQ_URL = "https://api.groq.com/openai/v1"
 
 # Using a fallback list directly if config isn't populated on the cloud
-GROQ_MODELS = ["llama3-8b-8192", "mixtral-8x7b-32768"]
+GROQ_MODELS = config.GROQ_MODELS
 
 def generate_response(prompt: str, temperature: float = 0.3, max_tokens: int = 512) -> str:
     # 1. Safely pull the API key from Streamlit Cloud secrets
