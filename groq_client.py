@@ -1,5 +1,6 @@
 import streamlit as st
 from openai import OpenAI
+import config
 
 GROQ_URL = "https://api.groq.com/openai/v1"
 
